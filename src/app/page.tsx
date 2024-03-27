@@ -1,3 +1,4 @@
+import { CodeSnippet } from "@/components/code-snippet";
 import { ThemeColorButton, ThemeModeButton } from "@/components/theme-buttons";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -76,6 +77,7 @@ export default function Home() {
           <Button>Deploy</Button>
         </CardFooter>
       </Card>
+      <CodeSnippet code={["npm install stuff", "npm run dev"]} />
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

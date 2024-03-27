@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { PropsWithChildren } from "react";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
         <ThemeProvider themes={[...themes]} defaultTheme="dark-blue">
           {children}
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );
